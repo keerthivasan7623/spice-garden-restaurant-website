@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice Garden | Website Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="site-dashboard">
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="dashboard.html"><span class="logo-mark">SG</span> Spice Garden</a>
+      <nav class="nav-links">
+        <a class="active-link" href="dashboard.html">Dashboard</a>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+        <a href="admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="dashboard-hero">
+      <div class="container dash-top">
+        <div class="dash-welcome">
+          <h1>Spice Garden Website Dashboard</h1>
+          <p>Open every page from one place, filter by section, check cart activity, and switch the UI theme while presenting.</p>
+          <div class="dash-actions"><a class="btn btn-outline" href="index.html">Open Website</a><a class="btn btn-outline" href="menu.html">Start Ordering</a></div>
+        </div>
+        <aside class="dash-panel">
+          <h2>Live Overview</h2>
+          <div class="dash-stats">
+            <div class="dash-stat"><span>Total Pages</span><strong>10</strong></div>
+            <div class="dash-stat"><span>Cart Items</span><strong id="dashCartCount">0</strong></div>
+            <div class="dash-stat"><span>Time</span><strong id="dashTime">--:--</strong></div>
+          </div>
+          <div class="form-actions"><button id="themeToggle" class="theme-toggle" type="button">Toggle Theme</button></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title"><div><h2>All Website Pages</h2><p id="resultCount">10 pages</p></div></div>
+        <div class="toolbar">
+          <input id="pageSearch" class="search" placeholder="Search pages, features, or sections...">
+          <button class="tab dash-filter active" data-type="All">All</button>
+          <button class="tab dash-filter" data-type="Food">Food</button>
+          <button class="tab dash-filter" data-type="Order">Order</button>
+          <button class="tab dash-filter" data-type="Account">Account</button>
+          <button class="tab dash-filter" data-type="Info">Info</button>
+          <button class="tab dash-filter" data-type="Admin">Admin</button>
+        </div>
+        <div id="pageGrid" class="grid grid-3"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3">
+        <article class="dash-panel"><h3>Quick Order Flow</h3><div class="mini-list"><a class="mini-item" href="menu.html"><span>1. Choose food</span><strong>Menu</strong></a><a class="mini-item" href="cart.html"><span>2. Review items</span><strong>Cart</strong></a><a class="mini-item" href="checkout.html"><span>3. Place order</span><strong>Checkout</strong></a></div></article>
+        <article class="dash-panel"><h3>User Pages</h3><div class="mini-list"><a class="mini-item" href="login.html"><span>Login account</span><strong>Open</strong></a><a class="mini-item" href="signup.html"><span>Create account</span><strong>Open</strong></a></div></article>
+        <article class="dash-panel"><h3>Restaurant Info</h3><div class="mini-list"><a class="mini-item" href="about.html"><span>Story and team</span><strong>About</strong></a><a class="mini-item" href="contact.html"><span>Message and map</span><strong>Contact</strong></a></div></article>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

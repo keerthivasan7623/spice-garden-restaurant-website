@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice Garden | Food Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar"><div class="container nav-inner"><a class="logo" href="index.html"><span class="logo-mark">SG</span> Spice Garden</a><nav class="nav-links"><a href="dashboard.html">Dashboard</a><a href="index.html">Home</a><a href="menu.html">Menu</a><a class="active-link" href="food-details.html">Food Details</a><a href="cart.html">Cart (<span data-cart-count>0</span>)</a></nav></div></header>
+  <main>
+    <section class="section"><div class="container detail-layout">
+      <img id="detailImage" class="detail-image" alt="Masala dosa">
+      <div class="summary-box">
+        <p class="rating">4.9/5 Customer Rating</p>
+        <h1 id="detailName">Masala Dosa</h1>
+        <p id="detailDesc" class="muted"></p>
+        <h2 id="detailPrice" class="price"></h2>
+        <h3>Ingredients</h3>
+        <ul><li>Rice and urad dal batter</li><li>Potato masala</li><li>Curry leaves and mustard seeds</li><li>Coconut chutney and sambar</li></ul>
+        <div class="cart-row">
+          <div class="qty"><button id="minusQty">-</button><strong id="detailQty">1</strong><button id="plusQty">+</button></div>
+          <button id="detailAdd" class="btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div></section>
+    <section class="section"><div class="container"><div class="section-title"><div><h2>Customer Reviews</h2><p>Guests love the crisp texture and classic taste.</p></div></div><div class="grid grid-3"><article class="card review"><p class="rating">5.0/5</p><p>"Best dosa in town."</p><strong>- Kavya</strong></article><article class="card review"><p class="rating">4.8/5</p><p>"The chutneys are fresh and spicy."</p><strong>- Nikhil</strong></article><article class="card review"><p class="rating">4.9/5</p><p>"Perfect breakfast plate."</p><strong>- Priya</strong></article></div></div></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+

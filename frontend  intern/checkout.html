@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice Garden | Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar"><div class="container nav-inner"><a class="logo" href="index.html"><span class="logo-mark">SG</span> Spice Garden</a><nav class="nav-links"><a href="dashboard.html">Dashboard</a><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="cart.html">Cart (<span data-cart-count>0</span>)</a><a class="active-link" href="checkout.html">Checkout</a></nav></div></header>
+  <main class="section"><div class="container checkout-layout">
+    <form id="checkoutForm" class="summary-box" data-demo-form data-message="Order placed successfully">
+      <h1>Checkout</h1>
+      <div class="form-group"><label>Full Name</label><input required placeholder="Your name"></div>
+      <div class="form-group"><label>Phone</label><input required placeholder="+91 98765 43210"></div>
+      <div class="form-group"><label>Delivery Address</label><textarea required placeholder="House number, street, city"></textarea></div>
+      <div class="form-group"><label>Payment Method</label><select required><option>UPI</option><option>Card</option><option>Cash on Delivery</option></select></div>
+      <button class="submit-btn" type="submit">Place Order</button>
+    </form>
+    <aside class="summary-box"><h2>Order Summary</h2><div id="checkoutItems"></div><div class="summary-row"><span>Subtotal</span><strong data-subtotal>Rs. 0</strong></div><div class="summary-row"><span>Delivery</span><strong data-delivery>Rs. 0</strong></div><div class="summary-row total"><span>Total</span><strong data-total>Rs. 0</strong></div></aside>
+  </div></main>
+  <script src="script.js"></script>
+</body>
+</html>
+
